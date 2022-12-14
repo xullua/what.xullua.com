@@ -1,0 +1,172 @@
+/* カラー */
+:root {
+    --explain : #b700ff;
+    --help : #ff7b00;
+    --support : #0084ff;
+}
+@media (prefers-color-scheme: dark) {
+    :root {}
+}
+
+.top {
+    width: 1280px;
+    max-width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.top .area {
+    margin: 0 auto;
+}
+
+.top h1 {
+    font-size: 30px;
+    margin: 0 0 20px 0;
+}
+
+.top a {
+    background: #40a6ff;
+    color: #FFF;
+    padding: 5px 15px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 1s;
+}
+
+.top a:hover {
+    background: #7060ff;
+    transition: .2s;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 350px;
+    box-sizing: border-box;
+}
+
+/* 文章設定 */
+article {
+    margin: 80px auto 20px auto;
+    width: 1000px;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+article img {
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 10px #0004);
+}
+
+article .explain {
+    margin: 0 0 50px 0;
+}
+
+article .explain span {
+    background: var(--themecolor);
+    color: #FFF;
+    padding: 1px 10px;
+    border-radius: 30px;
+    font-size: 12px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+article h1 {
+    font-size: 28px;
+    line-height: 1.5;
+    border-left: 6px solid var(--themecolor);
+    margin: 0 0 10px 0;
+    padding-left: 5px;
+}
+
+article h2 {
+    font-size: 22px;
+    margin: 15px 0 5px 0;
+    border-left: 4px solid var(--themecolor);
+    padding-left: 4px;
+}
+
+article h3 {
+    font-size: 18px;
+    margin: 8px 0 3px 0;
+}
+
+article p {
+    color: var(--sub-text);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+article mark {
+    color: var(--sub-text);
+    background: linear-gradient(transparent 50%, #eeff0050 10%);
+}
+
+article a {
+    color: var(--url);
+}
+
+@media screen and (max-width: 767px) {
+    article h1 {
+        font-size: 24px;
+    }
+    
+    article h2 {
+        font-size: 18px;
+        margin: 10px 0 5px 0;
+    }
+
+    article h3 {
+        font-size: 15px;
+        margin: 8px 0 3px 0;
+    }
+    
+    article p {
+        color: var(--sub-text);
+        font-size: 14px;
+    }
+}
+
+/* 最後 */
+#end {
+    width: 1000px;
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 40px auto;
+}
+
+#end .back {
+    background: var(--third-back);
+    filter: drop-shadow(0 0 10px #0003);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#end p:first-child {
+    font-weight: bold;
+    line-height: 1.2;
+    color: var(--themecolor);
+}
+
+#end p:nth-child(2) {
+    font-size: 12px;
+    margin: 0 0 10px 0;
+}
+
+#end a {
+    background: var(--themecolor);
+    color: #FFF;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
