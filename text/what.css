@@ -51,6 +51,18 @@ body {
     box-sizing: border-box;
 }
 
+article h1::selection,
+article h2::selection,
+article h3::selection,
+article p::selection,
+article a::selection,
+article mark::selection,
+article b::selection,
+article span::selection {
+    background: var(--themecolor);
+    color: #FFF;
+}
+
 /* 文章設定 */
 article {
     margin: 80px auto 20px auto;
@@ -112,7 +124,7 @@ article mark {
 }
 
 article a {
-    color: var(--url);
+    color: var(--themecolor);
 }
 
 @media screen and (max-width: 767px) {
