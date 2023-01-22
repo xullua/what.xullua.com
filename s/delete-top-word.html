@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>トップワードの内容を削除する</title>
+    <meta name="description" content="ヘルプサイトです。様々なよくある質問や、運営方針等をわかりやすくすることを目的としています。">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@xullua">
+    <meta name="twitter:title" content="トップワードの内容を削除する">
+    <meta name="twitter:description" content="ヘルプサイトです。様々なよくある質問や、運営方針等をわかりやすくすることを目的としています。">
+    <meta name="twitter:image" content="https://what.xullua.com/img/support.webp">
+
+    <link rel="shortcut icon" href="https://xullua.com/img/favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://xullua.com/css/color.css">
+    <link rel="stylesheet" href="https://xullua.com/css/base.css">
+    <link rel="stylesheet" href="../text/what.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://xullua.com/js/main.js" async></script>
+    <!-- アナリティクス -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JDKGJ1E005"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JDKGJ1E005');
+    </script>
+    <!-- 共通部分 -->
+    <script>
+        $(function () {
+            $("#header").load("https://xullua.com/header.html");
+            $("#end").load("../text/end.html");
+            $("#footer").load("https://xullua.com/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <style>
+        :root {
+            --themecolor: var(--support);
+        }
+    </style>
+
+    <main>
+        <article>
+            <h1>トップワードの内容を削除する</h1>
+            <div class="explain"><span>2023/1/22</span><span>サポート</span></div>
+
+            <h2>トップワードとは</h2>
+            <p>
+                xullua.comのトップに表示される皆さんから公募したテキストコンテンツです。面白い内容を募集しています。
+            </p>
+            <h2>削除申し立て</h2>
+            <p>
+                削除の申し立ては<a href="https://xullua.com/contact">お問い合わせ</a>ページから行ってください。その際には以下の内容を含めてください。<br>
+                ・削除する内容の全文<br>
+                ・簡易的な理由*<br>
+                基本的にほぼ全ての申し立ては受理されます。他人のコンテンツは削除できません。**
+            </p>
+            <div class="more">
+                <p>* 自分の名前が無断で使用されている。や、削除したくなった。など簡易的な理由で問題ありません。</p>
+                <p>** 自分に関する内容が含まれていた場合は除きます。</p>
+            </div>
+        </article>
+    </main>
+
+    <section id="end"></section>
+    <footer id="footer" style="position: absolute; bottom: 0;"></footer>
+</body>
+
+</html>
